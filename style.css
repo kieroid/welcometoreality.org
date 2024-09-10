@@ -1,9 +1,8 @@
 /* fuck you denton */
-
 /* generic style fonts */
 * {
     background-color: transparent;
-    color: white;
+    color: yellow;
     font-size: 16px;
 }
 
@@ -16,39 +15,20 @@ header {
 }
 
 html {
-    background-size: cover;
+    background-image: url("https://web.archive.org/web/20051130162806/http://geocities.com/ocean_myst_blue/stars.gif");
+    background-repeat: repeat;
+    background-size: auto;
     background-attachment: fixed;
     background-color: black;
 }
 
-html, button, input, optgroup, select, textarea {
+html, input, optgroup, select, textarea {
     font-family: monospace;
     outline: none;
     border-color: transparent;
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-/* css button styles */
-button {
-    background-color: #555;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: #777;
-}
-input {
-    border: 0;
-    outline: 0;
-    display: inline-block;
-    text-align: left;
 }
 
 /* screen size fix */
