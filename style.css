@@ -1,3 +1,6 @@
+/* fuck you denton */
+
+/* generic style fonts */
 * {
     background-color: transparent;
     color: white;
@@ -12,29 +15,8 @@ header {
     padding: 10px 20px;
 }
 
-.title {
-    margin: 0;
-    text-align: center;
-    flex: 1;
-}
-
-button {
-    background-color: #555;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #777;
-}
-
 html {
-    background-image: url(k/images/bg.gif);
+    background-image: url(content/background.gif);
     background-size: cover;
     background-attachment: fixed;
     background-color: black;
@@ -49,6 +31,20 @@ html, button, input, optgroup, select, textarea {
     margin: 0;
 }
 
+/* css button styles */
+button {
+    background-color: #555;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #777;
+}
 input {
     border: 0;
     outline: 0;
@@ -56,6 +52,7 @@ input {
     text-align: left;
 }
 
+/* screen size fix */
 @media screen and (max-width: 790px)  {
     * {
         font-size: 11px;
