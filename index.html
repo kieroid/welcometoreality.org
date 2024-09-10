@@ -11,6 +11,8 @@
         <link href="https://welcometoreality.com" rel="canonical">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="#ff6347" data-react-helmet="true" name="theme-color"/>
+        <script type="text/javascript" src="content/blocks.js"></script>
+        <script type="module" src="index.js"></script>
 
         <!-- embeds (discord, etc.) -->
 
@@ -28,9 +30,11 @@
     </head>
     <!-- in-website content -->
     <body id="parent">
+        <header>welcometoreality.org</header>
         <div id="history"></div>
-        <div id="commandline">
-            <label for="commandinput"></label><input type="text" id="commandinput" class="js-only" autofocus="" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <div id="blockline">
+
+            <label for="blockinput"></label><input type="text" id="blockinput" class="js-only" autofocus="" autocomplete="off" autocapitalize="off" spellcheck="false"><br>
         </div>
     </body>
 </html>
