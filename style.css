@@ -16,7 +16,6 @@ header {
 }
 
 html {
-    background-image: url(content/background.gif);
     background-size: cover;
     background-attachment: fixed;
     background-color: black;
