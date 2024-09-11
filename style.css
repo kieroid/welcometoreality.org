@@ -4,14 +4,7 @@
     background-color: transparent;
     color: yellow;
     font-size: 16px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px 20px;
+    box-sizing: border-box; /* Added for better box-sizing */
 }
 
 html {
@@ -20,10 +13,60 @@ html {
     background-size: auto;
     background-attachment: fixed;
     background-color: black;
+    margin: 0; /* Ensures no margin around the html */
+    padding: 0; /* Ensures no padding around the html */
 }
 
+body {
+    margin: 0; /* Ensures no margin around the body */
+    padding: 0; /* Ensures no padding around the body */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed; /* Make header fixed */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    z-index: 100; /* Ensure it stays above other content */
+}
+
+/* Grid container styling */
+.container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px; /* Padding to ensure grid is not flush with edges */
+    margin: 10px;
+}
+
+/* Grid item styling */
+.div1 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #333333;
+    padding: 10px 20px;
+}
+.div2 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #333333;
+    padding: 10px 20px;
+}
+
+img {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+
+/* Font and other styling */
 html, input, optgroup, select, textarea {
-    font-family: monospace;
+    font-family: "ComicShannsMono Nerd Font", "Comic Sans MS";
     outline: none;
     border-color: transparent;
     list-style-type: none;
@@ -31,9 +74,45 @@ html, input, optgroup, select, textarea {
     margin: 0;
 }
 
-/* screen size fix */
-@media screen and (max-width: 790px)  {
+/* Text sections */
+.text-section {
+    font-size: 50px;
+    text-align: center;
+    color: yellow; /* Text color to match your design */
+}
+
+.top-text {
+    margin-top: 60px; /* Space for the fixed header */
+}
+
+.bottom-text {
+    margin-top: 20px; /* Space between grid and bottom text */
+}
+
+/* Responsive font size */
+@media screen and (max-width: 790px) {
     * {
-        font-size: 11px;
+        font-size: 12px;
+    }
+    .container {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding: 10px; /* Padding to ensure grid is not flush with edges */
+        margin: 10px;
+    }
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #333333;
+        padding: 10px 20px;
+    }
+    .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: #333333;
+        padding: 10px 20px;
+    }
+
+    header {
+
     }
 }
